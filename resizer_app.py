@@ -3,7 +3,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Ridimensionatore 3D", layout="centered")
 
-st.title("📐 Ridimensionatore 3D Proporzionale")
+st.title("Ridimensionatore 3D Proporzionale")
 
 # Misure originali
 originale = {"Lunghezza": 1000.0, "Larghezza": 1298.0, "Altezza": 1014.0}
@@ -30,9 +30,9 @@ scala = valore_nuovo / originale[asse_modificato]
 nuove_misure = {asse: round(originale[asse] * scala, 2) for asse in originale}
 
 # Output
-st.markdown("### 🔄 Nuove dimensioni proporzionali:")
+st.markdown("### Nuove dimensioni proporzionali:")
 for asse, valore in nuove_misure.items():
     st.write(f"**{asse}**: {valore} mm")
 
 st.markdown("---")
-st.caption("App creata con ❤️ per ridimensionare in scala oggetti 3D")
+st.caption("App creata da Pietro Rizzoni per ridimensionare in scala oggetti 3D")
