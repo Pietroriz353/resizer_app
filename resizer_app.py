@@ -3,10 +3,10 @@ import streamlit as st
 
 st.set_page_config(page_title="Ridimensionatore 3D", layout="centered")
 
-st.title("Ridimensionatore 3D Proporzionale")
+st.title("Ridimensionatore giaguarov2 3D Proporzionale")
 
 # Misure originali
-originale = {"Lunghezza": 1014.9, "Larghezza": 1000.0, "Altezza": 1298.1}
+originale = {"Lunghezza": 894.9, "Larghezza": 1000.0, "Altezza": 1087.7}
 rapporti = {
     "Lunghezza": 1.0,
     "Larghezza": originale["Larghezza"] / originale["Lunghezza"],
